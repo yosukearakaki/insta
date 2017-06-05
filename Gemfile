@@ -32,6 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :development do
+  gem 'dotenv-rails'
+  gem 'letter_opener_web'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -43,10 +48,16 @@ group :development, :test do
   # gem 'spring'
 end
 
-gem 'devise'
-
-gem 'twitter-bootstrap-rails'
-
-gem 'jquery-turbolinks'
-
 gem 'rails_12factor', group: :production
+
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'jquery-turbolinks'
+gem 'faker'
+gem 'rails_admin'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'cancan'
+gem 'carrierwave'
+gem 'rmagick'

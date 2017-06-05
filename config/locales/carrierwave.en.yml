@@ -1,0 +1,5 @@
+en:
+  carrierwave:
+    Uploader:
+      Choose_File: "Choose File"
+      No_file_chosen: "No file chosen"

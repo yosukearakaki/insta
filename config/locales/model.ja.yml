@@ -16,6 +16,7 @@ ja:
         email: "メールアドレス"
         content: "内容"
       user:
+        user: "ユーザー"
         title: "タイトル"
         name: "名前"
         email: "メールアドレス"

@@ -1,40 +1,27 @@
-<h1>Top#index</h1>
-<p>Find me in app/views/top/index.html.erb</p>
-<section class="main-header">
+<section>
   <p class="flash"><%= notice %><%= alert %></p>
-  <img src="<%= asset_path "achieve.png" %>">
-
-<section class="function container-fluid">
+  <br>
+</section>
+<section>
   <div class="row">
-    <h2>Function</h2>
-      <div class="function-images">
-        <div class="col-md-3 col-sm-6">
-          <div class="function-image">
-            <img src="<%=asset_path "key.png" %>">
-            <p>ログイン機能</p>
-          </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="function-image">
-          <img src="<%=asset_path "mails.png" %>">
-          <p>メール送信機能</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="function-image">
-          <img src="<%=asset_path "girls.png" %>">
-          <p>友達つながり機能</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="function-image">
-          <img src="<%=asset_path "comment.png" %>">
-          <p>コメント投稿機能</p>
-        </div>
-      </div>
-      <div id="page-top-btn" class="page-top-btn">
-        <p><a class="move-page-top" id="move-page-top">▲</a></p>
-      </div>
+    <div class="col-md-8 col-sm-8">
+      <img src="<%= asset_path "insta.gif" %>">
+    </div>
+    <div class="col-md-2 col-sm-4">
+    <% if user_signed_in? %>
+      <br><br><br><br><br><br><br>
+      <p class="box1">
+      あげたい画像はありますか？
+      <br><br>
+      <%= link_to '画像を投稿する', new_picture_path, class: 'btn btn-default' %>
+      </p>
+    <% else %>
+      <br><br><br><br><br><br><br>
+      <p class="box1">
+      アカウント作成はこちら
+      <br><br>
+      <%= link_to '作成する', new_user_registration_path, class: 'btn btn-default'  %>
+    <% end %>
     </div>
   </div>
 </section>

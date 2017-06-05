@@ -41,7 +41,8 @@ header {
     color: #ccc;
     text-align: center;
     &:hover, &:focus {
-      color: white;
+      color: white
+      ;
     }
   }
   
@@ -52,7 +53,6 @@ header {
     }
   }
 }
-
 
 .main-header {
   padding-bottom: 15%;
@@ -67,18 +67,6 @@ header {
   margin: 0 auto;
   width: 25%;
   padding-top: 15%;
-}
-
-.about {
-  background-color: white;
-  color: #333;
-  padding: 80px;
-}
-
-.function {
-  background-color: #e9e9e9;
-  padding: 80px;
-  padding-bottom: 185px;
 }
 
 footer {
@@ -126,6 +114,6 @@ body {
 }
 
 .flash {
-  color: white;
+  color: gray;
   padding-top: 10px;
 }

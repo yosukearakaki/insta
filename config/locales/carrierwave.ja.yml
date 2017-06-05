@@ -1,0 +1,5 @@
+ja:
+  carrierwave:
+    Uploader:
+      Choose_File: 'ファイルを選択'
+      No_file_chosen: 'ファイルが選択されていません'
